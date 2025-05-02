@@ -23,7 +23,7 @@
                   </div>
                   <div class="card-footer" style="background-color: transparent;">
                     <div class="icons">
-                    <button class="btnLike btnIcon" id="likes<%=index%>" onclick="change(<%=index%>)"><i class="bi bi-heart" id="likes">0</i></button>
+                    <button class="btnLike btnIcon" id="likes<%=index%>" onclick="change(<%=index%>)"><i class="bi bi-heart" id="like<%=index%>">0</i></button>
                     <div>
                         <a href="/edit?index=<%= index %>"><button class="btnEdit btnIcon" ><i class="bi bi-pencil-square"></i></button></a>
                         <a href="/del?index=<%= index %>"><button class="btnEdit btnIcon"><i class="bi bi-trash3-fill"></i></button></a>
@@ -56,13 +56,13 @@
             }
             }
         function change(myid) {
-            var x = document.getElementById("likes"+myid);
-            var y = document.getElementsByClassName("btnLike")[0];
+            var x = document.getElementById("like"+myid);
+            var y = document.getElementById("likes"+myid);
             if(x.className==="bi bi-heart"){
-                y.innerHTML = "<i class='bi bi-heart-fill' id='likes'>1</i>";
+                y.innerHTML = "<i class='bi bi-heart-fill' id='like"+myid+"'>1</i>";
                 
             }else{
-                y.innerHTML = "<i class='bi bi-heart' id='likes'>0</i>";
+                y.innerHTML = "<i class='bi bi-heart' id='like"+myid+"'>0</i>";
                 
             }
 
