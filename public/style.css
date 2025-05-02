@@ -1,0 +1,104 @@
+body{
+    background-color: #F2EFE7;
+}
+h1{
+    color: #006A71;
+    font-size: 70px;
+    font-family: "Cookie";
+}
+.nonactive{
+    color: #006A71;
+    font-size: larger;
+}
+.btn{
+    background-color: #006A71;
+    color: #F2EFE7;
+    font-size: large;
+}
+
+.btn:hover{
+    background-color: #014e53fe;
+    color: #F2EFE7;
+}
+form{
+    font-size: 20px;
+    color: #48A6A7;
+}
+#submit{
+    font-size: 20px;
+    color: #F2EFE7;
+    background-color: #006A71;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    border: #006A71;
+    margin-top: 15px;
+}
+#submit:hover{
+    background-color: #014e53fe;
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+.card-text{
+    font-weight: 600;
+    font-size: 20px;
+}
+.card .btn {
+    margin: 5px 15px;
+}
+h2{
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  margin-top: 50px;
+  margin-left: 10px;
+
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.vert{
+    background-color: #e7fbcf;
+}
+i{
+    color: #7D0A0A;
+}
+.btnIcon{
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+h3{
+    font-size: 35px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+h4{
+    padding-bottom: 15px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+}
+.homeCards{
+    font-family: "Amiri", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

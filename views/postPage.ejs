@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/header.ejs")%>
+
+<body>
+    
+<div class="container py-4">
+<div class="row justify-content-center align-items-center mt-4">
+<div class="col-12 col-md-6">
+<form action="/submit" method="POST" onsubmit="return check()" >
+    <div class="form-floating">
+        <input type="text" name="title" class="form-control" id="floatingInput" placeholder="Title:">
+        <label for="floatingInput">Title</label>
+    </div>
+    <div class="form-floating">
+        <input type="text" name="object" class="form-control" id="floatingPassword" placeholder="Object">
+        <label for="floatingPassword">Object</label>
+    </div>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Description" name="description" id="floatingTextarea2" style="height: 200px"></textarea>
+        <label for="floatingTextarea2">Description</label>
+    </div>
+    <div style="text-align:center">
+        <input type="submit" value="Post" id="submit">
+    </div>
+</form>
+</div>
+</div>
+</div>
+<%- include("partials/footer.ejs")%>
+
+<script>
+    // This function runs when the form is submitted
+    function check() {
+        let x = document.getElementsByName("title")[0].value.trim();
+        let y = document.getElementsByName("object")[0].value.trim();
+        let z = document.getElementsByName("description")[0].value.trim();
+        let btn = document.getElementById("submit");
+
+
+        // If any field is empty, show an alert and prevent form submission
+        if (x === "" || y === "" || z === "") {
+            alert("Please fill all the inputs");
+
+            return false;  // Prevent form submission
+        } else {
+            return true;  // Allow form submission
+        }
+    };
+</script>
+
+</body>
+</html>
